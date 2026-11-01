@@ -1,0 +1,908 @@
+
+
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #212529;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #dbeafe;
+}
+
+/* Welcome section */
+#home {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+#home h1 {
+  color: #123b73;
+}
+
+#home .lead {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5b6575;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Section headings */
+section h2 {
+  color: #123b73;
+  font-weight: 700;
+}
+
+/* Dashboard and issue cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(30, 60, 100, 0.12) !important;
+}
+
+.card-body {
+  padding: 22px;
+}
+
+/* Issue images */
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Search and category filter */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6ea8fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* About section */
+#about {
+  background-color: #eaf2ff;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  padding: 45px 25px !important;
+}
+
+/* Footer */
+footer {
+  background-color: #123b73 !important;
+  margin-top: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  #home {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  #home h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  #about {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #263238;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #123c69, #2874a6) !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd166 !important;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2874a6;
+  border-color: #2874a6;
+}
+
+.btn-primary:hover {
+  background-color: #123c69;
+  border-color: #123c69;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(18, 60, 105, 0.2);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Search, filter and sort inputs */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #d5deea;
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #2874a6;
+  box-shadow: 0 0 0 3px rgba(40, 116, 166, 0.15);
+}
+
+/* Dashboard numbers */
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+  color: #2874a6;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Section headings */
+section h2,
+.container h2 {
+  color: #123c69;
+  font-weight: 700;
+}
+
+/* Success message */
+.alert-success {
+  border: none;
+  border-left: 5px solid #198754;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #123c69;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .dashboard-card {
+    margin-bottom: 12px;
+  }
+}
+
+/* Issue status badges */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.status-reported {
+  background-color: #fff0d5;
+  color: #9a5b00;
+}
+
+.status-in-progress {
+  background-color: #dceeff;
+  color: #145da0;
+}
+
+.status-resolved {
+  background-color: #d9f7e8;
+  color: #167347;
+}
+
+/* Issue card headings */
+.issue-card h5 {
+  color: #123c69;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Issue card details */
+.issue-card p {
+  color: #586575;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Buttons inside issue cards */
+.issue-card .btn {
+  margin: 4px 4px 4px 0;
+}
+
+/* ===================================
+   CivicPulse Responsive Design
+=================================== */
+
+/* Prevent unwanted horizontal scrolling */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Images should fit their containers */
+img {
+  max-width: 100%;
+}
+
+/* Improve navigation spacing */
+.navbar .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0dcaf0;
+}
+
+/* Report and dashboard cards */
+.card {
+  overflow-wrap: anywhere;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* Buttons should remain easy to use */
+.btn {
+  transition: transform 0.2s ease;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding-top: 10px;
+    align-items: stretch !important;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 5px;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+  }
+
+  h1.display-5 {
+    font-size: 2.3rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 575.98px) {
+  h1.display-5 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  section.container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .pagination .page-link {
+    padding: 0.4rem 0.65rem;
+  }
+
+  #reports > .d-flex {
+    align-items: stretch !important;
+  }
+
+  #reports > .d-flex > button {
+    width: 100%;
+  }
+
+  #reports .form-select,
+  #reports .form-control {
+    font-size: 16px;
+  }
+
+  #analytics .card {
+    margin-bottom: 8px;
+  }
+
+  #analytics canvas {
+    max-width: 100%;
+  }
+
+  footer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+/* ===== CivicPulse Login Page ===== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e8f0ff, #f5f7fb, #e4f7f1);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e5eaf0;
+  box-shadow: 0 15px 45px rgba(25, 50, 80, 0.12);
+  animation: loginAppear 0.5s ease;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-logo {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2563eb, #0d9488);
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.login-header h2 {
+  margin-bottom: 8px;
+  color: #172554;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.login-header p {
+  margin-bottom: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.login-card .form-label {
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-input {
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #dbe3ed;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  color: #1e293b;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-input:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #94a3b8;
+}
+
+.login-button {
+  width: 100%;
+  min-height: 49px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #0d9488);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.login-demo {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login-demo .badge {
+  padding: 8px 13px;
+  color: #2563eb !important;
+  border: 1px solid #dbeafe;
+  font-weight: 600;
+}
+
+.login-demo p {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.login-footer {
+  margin: 22px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  text-align: center;
+}
+
+@keyframes loginAppear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Login Page ===== */
+
+@media (max-width: 576px) {
+  .login-page {
+    padding: 24px 16px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+    border-radius: 16px;
+  }
+
+  .login-header h2 {
+    font-size: 26px;
+  }
+
+  .login-logo {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .login-card {
+    animation: none;
+  }
+
+  .login-button,
+  .login-input {
+    transition: none;
+  }
+}
+
+
+/* =========================================
+   Improved CivicPulse issue cards
+   These styles are scoped to issue cards
+   so other cards keep their current design.
+========================================= */
+
+.issue-card-column {
+  display: flex;
+}
+
+.issue-card {
+  width: 100%;
+  border: 1px solid #e5eaf1;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(18, 60, 105, 0.07);
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+@media (hover: hover) {
+  .issue-card:hover {
+    transform: translateY(-4px);
+    border-color: #cbdcf0;
+    box-shadow: 0 12px 28px rgba(18, 60, 105, 0.13);
+  }
+}
+
+.issue-card-image {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  background: #edf2f7;
+}
+
+.issue-card-body {
+  min-width: 0;
+  padding: 20px;
+}
+
+.issue-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.issue-category-badge {
+  max-width: 58%;
+  overflow: hidden;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #edf4ff;
+  color: #24578a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.issue-card .status-badge {
+  margin-bottom: 0;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.issue-card-title {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 3.2rem;
+  margin: 0 0 12px;
+  color: #123c69;
+  font-size: 1.12rem;
+  font-weight: 750;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.issue-card-location {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 2.8rem;
+  margin: 0 0 12px;
+  color: #5b6575;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.issue-card-location i {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #2874a6;
+}
+
+.issue-card-description {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 4.5rem;
+  margin-bottom: 20px;
+  color: #586575;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.issue-card-status-control {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+.issue-card-status-control .form-label {
+  margin-bottom: 7px;
+  color: #334155;
+}
+
+.issue-card-status-control .form-select {
+  min-height: 38px;
+  font-size: 0.875rem;
+}
+
+.issue-card-actions {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.issue-card-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 7px 11px;
+  font-weight: 600;
+}
+
+.issue-card-actions .btn-primary {
+  background-color: #2874a6;
+  border-color: #2874a6;
+}
+
+.issue-card-actions .btn-primary:hover {
+  background-color: #123c69;
+  border-color: #123c69;
+}
+
+@media (max-width: 767.98px) {
+  .issue-card-image {
+    height: 190px;
+  }
+
+  .issue-card-body {
+    padding: 18px;
+  }
+
+  .issue-card-title {
+    min-height: 0;
+  }
+
+  .issue-card-location {
+    min-height: 0;
+  }
+
+  .issue-card-description {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .issue-card-image {
+    height: 200px;
+  }
+
+  .issue-card-body {
+    padding: 17px;
+  }
+
+  .issue-card-actions {
+    gap: 8px !important;
+  }
+
+  .issue-card-actions .btn {
+    flex: 1 1 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .issue-card,
+  .issue-card-actions .btn {
+    transition: none;
+  }
+
+  .issue-card:hover {
+    transform: none;
+  }
+}
+
+
+/* Issue Tracking Timeline */
+.issue-timeline {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  min-height: 95px;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.timeline-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #d5dce5;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 1;
+}
+
+.timeline-icon.completed {
+  background: #e7f7ed;
+  border-color: #198754;
+  color: #198754;
+}
+
+.timeline-icon.active {
+  border-color: #0d6efd;
+  background: #e8f1ff;
+  color: #0d6efd;
+}
+
+.timeline-line {
+  width: 3px;
+  flex-grow: 1;
+  background: #d5dce5;
+}
+
+.timeline-line.completed-line {
+  background: #198754;
+}
+
+.timeline-content {
+  padding-bottom: 20px;
+}
+
+.timeline-content h6 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .issue-timeline {
+    padding: 18px;
+  }
+}
+
